@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(89, 47, 167);
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: #ffff;
+    margin-top: 20px;
+}
+.container{
+    background-color: #ffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38,33,61,0.2);
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input{
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(57, 27, 92);
+    font-size: 16px;
+}
+#search-btn2{
+    padding: 15px 0;
+    width: 25%;
+    background-color: rgb(97, 36, 126);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffff;
+    border-radius: 5px;
+}
+#cut{
+    border: none;
+    background-color: #ffff;
+}
+.search-box i{
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.result{
+    position: relative;
+}
+.result h3{
+    font-size: 30px;
+    color: rgb(124, 43, 134);
+}
+.result .word{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.result button{
+    background-color: transparent;
+    color: rgb(124, 43, 134);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.result .details{
+    display: flex;
+    gap: 10px;
+    color: rgb(97, 36, 126);
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-mean{
+    color: rgb(97, 36, 126);
+}
+.word-ex{
+    color: rgb(97, 36, 126);
+    font-style: italic;
+    border-left: 5px solid rgb(97,36,126);
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+@media screen and (min-width:300px) and (max-width:700px){
+    h1{
+        font-size: 60px;
+        color: #ffff;
+    }
+    .container{
+        padding: 80px 16px;
+    }
+}
